@@ -17,25 +17,25 @@
 <div id="app">
     <main>
         <h1>
-            Benvuto nel mio primo sito di sticky.notes
+            Benvenuto nel mio primo sito di sticky.notes
         </h1>
         <h3>
-            Usa la puntina per eliminare il post-it oppure il thumb-up per segnarla come completa!
+            Usa la puntina per eliminare il post-it, il thumb-up per segnarla come completa e il thumb-down se ti sei ricordato che ancora non hai fatto quell'azione
         </h3>
         <div id="post-it">
-            <input type="text" name="testoAggiungi" id="testoAggiungi" placeholder="Cosa abbiamo ancora da fare oggi?" v-model="newTodo.text">
+            <input type="text" name="testoAggiungi" id="testoAggiungi" placeholder="Cosa abbiamo ancora da fare oggi?" v-model="newTodo.text" @keyUp.enter="addTodo">
             <button id="bottoneAggiungi" @click="addTodo"  >Aggiungi</button>
+            <div v-if="(errore)" id="error-mex">
+                non puoi lasciare vuota la cassella oppure hai inserito meno di 4 caratteri
+            </div>
         </div>
         <div id="bacheca">
-            <div v-for="(element, index) in todos" :key="index" class="post">
+            <div v-for="(element, index) in todos" :key="index" class="post" :class="randomColor()" :style="randomPosition()">
                 <p :class="(element.done) ? 'fatto' : ''">{{element.text}}</p>
                 <i class="fa-solid fa-thumbtack puntina" @click="eliminaPost(index)"></i>
                 <i v-if="!element.done"   class="fa-solid fa-thumbs-up spunta" @click="element.done = true"></i>
                 <i v-if="element.done"   class="fa-solid fa-thumbs-up spunta-no" @click="element.done = false"></i>
             </div>
-            
-
-
         </div>
     </main>
 </div>

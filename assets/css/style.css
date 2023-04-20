@@ -59,7 +59,6 @@ main h3 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    background:#ffa;
     overflow:hidden;
     padding:20px;
     border-radius:0 0 0 30px/45px;
@@ -80,7 +79,6 @@ main h3 {
  position:absolute;
  width:20px;
  height:25px;
- background:#ffa;
  box-shadow:
    3px -2px 10px rgba(0,0,0,0.2),
    inset 15px -15px 15px rgba(0,0,0,0.3);
@@ -129,3 +127,31 @@ main h3 {
 .puntina:hover {
     color: red;
 }
+
+#error-mex {
+    background-color: red;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.giallo,
+.giallo::before{
+    background-color:#ffa;
+}
+
+.verde,
+.verde::before{
+    background-color:rgb(142,253,153);
+}
+
+.celeste,
+.celeste::before{
+    background-color:rgb(175,255,255);
+}
+
+.rosa,
+.rosa::before{
+    background-color:rgb(255,178,244);
+}
+
