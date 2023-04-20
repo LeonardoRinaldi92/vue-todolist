@@ -21,6 +21,14 @@ createApp({
                 done: true
             },
             {
+                text: 'Andare dal dentista',
+                done: false
+            },
+            {
+                text: 'Chiamare nonna',
+                done: false
+            },
+            {
                 text: 'Aggiungere Bonus',
                 done: true
             },
@@ -68,7 +76,7 @@ createApp({
 
     randomPosition(){
         let angolo = Math.floor(Math.random() * 2)
-        let numero = Math.floor(Math.random() * 30) + 1
+        let numero = Math.floor(Math.random() * 18) + 1
         if (angolo == 1) {
             angolo = "+" 
         } else {
