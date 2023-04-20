@@ -11,7 +11,21 @@
 <body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<div id="app">{{ message }}</div>
+<div id="app">
+    <main>
+        <h1>
+            Benvuto nel mio primo sito di sticky.notes
+        </h1>
+        <h3>
+            Usa la puntina per eliminare il post-it oppure il thumb-up per segnarla come completa!
+        </h3>
+        <div id="post-it">
+            <input type="text" name="testoAggiungi" id="testoAggiungi">
+            <button id="bottoneAggiungi">Aggiungi</button>
+
+        </div>
+    </main>
+</div>
 
 <script src="./assets/js/main.js"></script>
 </body>

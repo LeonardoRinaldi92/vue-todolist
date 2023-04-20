@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/decorative-background-cork-detai_23-2148210093.avif);
+    background-size: contain;
+    text-align: center;
+    color: aliceblue;
+}
+
+main h1,
+main h3 {
+    background-color: rgba(15, 15, 66, 0.43);
+
+}
+
+#post-it {
+    margin-top: 1rem;
+}
+
+#testoAggiungi {
+    width: 20rem;
+    height: 1.5rem;
+    border: none;
+}
+
+#bottoneAggiungi {
+    height: 1.5rem;
+    width: 5rem;
+    background-color: rgb(255,247,154);
+    border: none;
+    border-radius:0 0 0 3px/4px;
+  box-shadow:
+    inset 0 -4px 4px rgba(0,0,0,0.2),
+    inset 0 2.5px 1px rgba(0,0,0,0.2),
+    0 5px 6px 5px rgba(0,0,0,0.2);
+}
