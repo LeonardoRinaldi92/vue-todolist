@@ -47,7 +47,7 @@ main h3 {
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
-    justify-content: space-between;
+
     padding: 1rem;
 
 }
