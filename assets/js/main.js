@@ -40,7 +40,7 @@ createApp({
             done: false
         },
 
-        errore : false
+        errore : false,
     }
   },
   methods: {
