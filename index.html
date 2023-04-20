@@ -28,8 +28,8 @@
         </div>
         <div id="bacheca">
             <div v-for="(element, index) in todos" :key="index" class="post">
-                <p>{{element.text}}</p>
-                <i class="fa-solid fa-thumbtack puntina"></i>
+                <p :class="(element.done) ? 'fatto' : ''">{{element.text}}</p>
+                <i class="fa-solid fa-thumbtack puntina" @click="eliminaPost(index)"></i>
             </div>
             
 

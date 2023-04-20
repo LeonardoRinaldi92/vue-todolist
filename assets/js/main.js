@@ -30,7 +30,12 @@ createApp({
         this.newTodo = {
             text:'',
         done: false,
-    }
+        }
+    },
+    eliminaPost(i) {
+        this.todos.splice(i , 1)
+    },
     }
 }
-}).mount('#app')
+
+).mount('#app')

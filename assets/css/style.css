@@ -98,6 +98,10 @@ main h3 {
     cursor: pointer;
 }
 
+.fatto {
+    text-decoration: line-through;
+}
+
 .puntina:hover {
     color: red;
 }
