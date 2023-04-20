@@ -30,6 +30,8 @@
             <div v-for="(element, index) in todos" :key="index" class="post">
                 <p :class="(element.done) ? 'fatto' : ''">{{element.text}}</p>
                 <i class="fa-solid fa-thumbtack puntina" @click="eliminaPost(index)"></i>
+                <i v-if="!element.done"   class="fa-solid fa-thumbs-up spunta" @click="element.done = true"></i>
+                <i v-if="element.done"   class="fa-solid fa-thumbs-up spunta-no" @click="element.done = false"></i>
             </div>
             
 
