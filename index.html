@@ -23,8 +23,8 @@
             Usa la puntina per eliminare il post-it oppure il thumb-up per segnarla come completa!
         </h3>
         <div id="post-it">
-            <input type="text" name="testoAggiungi" id="testoAggiungi">
-            <button id="bottoneAggiungi">Aggiungi</button>
+            <input type="text" name="testoAggiungi" id="testoAggiungi" placeholder="Cosa abbiamo ancora da fare oggi?" v-model="newTodo.text">
+            <button id="bottoneAggiungi" @click="addTodo"  >Aggiungi</button>
         </div>
         <div id="bacheca">
             <div v-for="(element, index) in todos" :key="index" class="post">

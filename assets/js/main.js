@@ -16,7 +16,21 @@ createApp({
                 text: 'Fare il bucato',
                 done: false
             }
-        ]
+        ],
+
+        newTodo : {
+            text:'',
+            done: false,
+        }
     }
-  }
+  },
+  methods: {
+    addTodo() {
+        this.todos.unshift(this.newTodo),
+        this.newTodo = {
+            text:'',
+        done: false,
+    }
+    }
+}
 }).mount('#app')
