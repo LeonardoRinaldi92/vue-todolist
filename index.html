@@ -36,6 +36,11 @@
                 <i v-if="!element.done"   class="fa-solid fa-thumbs-up spunta" @click="element.done = true"></i>
                 <i v-if="element.done"   class="fa-solid fa-thumbs-up spunta-no" @click="element.done = false"></i>
             </div>
+            <div v-if="todos.length == 0" id="vuoto">
+                <h2>
+                    bravo hai staccato tutti i post-it...
+                </h2>
+            </div>
         </div>
     </main>
 </div>

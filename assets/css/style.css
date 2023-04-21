@@ -155,3 +155,9 @@ main h3 {
     background-color:rgb(255,178,244);
 }
 
+#vuoto {
+    text-align: center;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
