@@ -31,7 +31,7 @@
         </div>
         <div id="bacheca">
             <div v-for="(element, index) in todos" :key="index" class="post" :class="element.color" :style="element.position">
-                <p :class="(element.done) ? 'fatto' : ''">{{element.text}}</p>
+                <input type="text" id="newText" :value="element.text" :class="(element.done) ? 'fatto' : ''" v-model="element.text">
                 <i class="fa-solid fa-thumbtack puntina" @click="eliminaPost(index)"></i>
                 <i v-if="!element.done"   class="fa-solid fa-thumbs-up spunta" @click="element.done = true"></i>
                 <i v-if="element.done"   class="fa-solid fa-thumbs-up spunta-no" @click="element.done = false"></i>

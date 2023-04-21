@@ -161,3 +161,14 @@ main h3 {
     text-transform: uppercase;
     font-size: 3rem;
 }
+
+#newText {
+    background: none;
+    border: none;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 1.5rem;
+}
+
+#newText:focus {
+border: 0px none;
+}
