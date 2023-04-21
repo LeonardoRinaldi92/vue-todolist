@@ -170,5 +170,6 @@ main h3 {
 }
 
 #newText:focus {
-border: 0px none;
+    box-shadow: none;
+    outline: none;
 }
