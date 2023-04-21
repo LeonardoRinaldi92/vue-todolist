@@ -6,38 +6,54 @@ createApp({
         todos: [
             {
                 text: 'Fare i compiti',
-                done: false
+                done: false,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
             {
                 text: 'Fare la spesa',
-                done: true
+                done: true,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
             {
                 text: 'Fare il bucato',
-                done: false
+                done: false,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
             {
                 text: 'Rapinare banca',
-                done: true
+                done: true,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
             {
                 text: 'Andare dal dentista',
-                done: false
+                done: false,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
             {
                 text: 'Chiamare nonna',
-                done: false
+                done: false,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
             {
                 text: 'Aggiungere Bonus',
-                done: true
+                done: true,
+                position: this.randomPosition(),
+                color: this.randomColor()
             },
 
         ],
 
         newTodo : {
             text:'',
-            done: false
+            done: false,
+            position: this.randomPosition(),
+            color: this.randomColor()
         },
 
         errore : false,
@@ -49,7 +65,8 @@ createApp({
             this.todos.unshift(this.newTodo),
             this.newTodo = {
                 text:'',
-            done: false,
+                position: this.randomPosition(),
+                color: this.randomColor()
             }
             this.errore = false
         }else{
